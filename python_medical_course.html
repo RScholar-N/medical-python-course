@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python for Undergraduate Medical Students: Course Material</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            text-align: center;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #3498db;
+        }
+        h2 {
+            color: #34495e;
+            font-size: 1.8em;
+            margin-top: 35px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #ececec;
+        }
+        h3 {
+            color: #3498db;
+            font-size: 1.4em;
+            margin-top: 25px;
+        }
+        h4 {
+            color: #555;
+            font-size: 1.1em;
+            margin-top: 15px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        ol {
+            list-style-type: decimal;
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #000;
+        }
+        em {
+            font-style: italic;
+            color: #666;
+        }
+        .section-title {
+            background-color: #ecf0f1;
+            padding: 10px 15px;
+            border-left: 5px solid #3498db;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .module-header {
+            background-color: #e0f2f7;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            border: 1px solid #b3e0ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Python for Undergraduate Medical Students: A Practical Approach to Data-Driven Healthcare</h1>
+
+        <p><strong>Course Goal:</strong> To equip undergraduate medical students with foundational Python programming skills, enabling them to understand, analyze, and apply computational methods to medical data and research, fostering a data-driven mindset for future clinical practice.</p>
+
+        <p><strong>Prerequisites:</strong> No prior programming experience is assumed. Basic computer literacy (file management, internet Browse) is helpful.</p>
+
+        <p><strong>Course Structure:</strong> The course is designed to progressively build skills, starting with fundamental programming concepts and moving into medical-specific applications. Each module should include hands-on exercises and, where possible, small projects or case studies using simulated or public medical datasets.</p>
+
+        <div class="module-header">
+            <h2>Module 1: Introduction to Python and Computational Thinking in Medicine</h2>
+        </div>
+        
+        <h3>1.1 Why Python for Medical Students?</h3>
+        <p>Overview of Python's role in modern healthcare:</p>
+        <ul>
+            <li>Data analysis (EHRs, clinical trials)</li>
+            <li>Medical imaging</li>
+            <li>Machine learning and AI in diagnostics/prognosis</li>
+            <li>Drug discovery and bioinformatics</li>
+            <li>Hospital management and operations research</li>
+            <li>Research automation</li>
+        </ul>
+        <p>Computational thinking: breaking down medical problems into solvable steps.</p>
+        <p>Ethical considerations of AI and data in medicine.</p>
+
+        <h3>1.2 Setting Up Your Python Environment</h3>
+        <ul>
+            <li>Installing Python (Anaconda distribution recommended for data science libraries).</li>
+            <li>Introduction to Integrated Development Environments (IDEs): VS Code, Jupyter Notebooks (emphasize for interactive data analysis).</li>
+            <li>Basic terminal/command line usage (navigating directories, running Python scripts).</li>
+        </ul>
+
+        <h3>1.3 Python Basics: Variables, Data Types, and Operators</h3>
+        <ul>
+            <li>What are variables? Naming conventions.</li>
+            <li>Common data types: integers, floats, strings, booleans.</li>
+            <li>Arithmetic, comparison, and logical operators.</li>
+            <li>Basic input/output (<code>print()</code>, <code>input()</code>).</li>
+        </ul>
+
+        <h3>1.4 Control Flow: Decisions and Loops</h3>
+        <ul>
+            <li><code>if</code>/<code>elif</code>/<code>else</code> statements for conditional logic (e.g., patient triage based on symptoms).</li>
+            <li><code>for</code> loops for iterating over data (e.g., processing a list of patient records).</li>
+            <li><code>while</code> loops for repeating actions until a condition is met.</li>
+        </ul>
+
+        <h3>1.5 Data Structures: Lists, Tuples, Dictionaries, and Sets</h3>
+        <ul>
+            <li><strong>Lists:</strong> Ordered, mutable collections (e.g., list of medications, lab results).</li>
+            <li><strong>Tuples:</strong> Ordered, immutable collections (e.g., coordinates, fixed patient demographics).</li>
+            <li><strong>Dictionaries:</strong> Key-value pairs (e.g., patient medical history with diagnoses as keys and dates as values).</li>
+            <li><strong>Sets:</strong> Unordered collections of unique elements (e.g., unique diagnoses in a dataset).</li>
+        </ul>
+
+        <h3>1.6 Functions: Organizing Your Code</h3>
+        <ul>
+            <li>Defining and calling functions.</li>
+            <li>Parameters and return values.</li>
+            <li>Built-in functions vs. user-defined functions.</li>
+            <li>Docstrings for documenting code.</li>
+        </ul>
+
+        <div class="module-header">
+            <h2>Module 2: Data Handling and Analysis with Core Libraries</h2>
+        </div>
+        
+        <h3>2.1 Introduction to NumPy (Numerical Python)</h3>
+        <ul>
+            <li>What is NumPy? Advantages over Python lists for numerical operations.</li>
+            <li>Creating and manipulating NumPy arrays (1D, 2D - representing clinical measurements, image data).</li>
+            <li>Array operations: arithmetic, slicing, indexing.</li>
+            <li>Basic statistical functions on arrays (mean, median, standard deviation).</li>
+        </ul>
+
+        <h3>2.2 Introduction to Pandas (Data Analysis Library)</h3>
+        <ul>
+            <li><strong>The DataFrame:</strong> The cornerstone of data analysis (analogous to a spreadsheet or SQL table).</li>
+            <li>Creating DataFrames from various sources (CSV, Excel - common for clinical data).</li>
+            <li>Data Import and Export: <code>pd.read_csv()</code>, <code>df.to_csv()</code>.</li>
+            <li>Data Inspection: <code>head()</code>, <code>tail()</code>, <code>info()</code>, <code>describe()</code>, <code>shape</code>, <code>columns</code>.</li>
+            <li>Data Selection and Filtering: Selecting columns, rows, and filtering based on conditions (e.g., patients with specific disease, age group).</li>
+        </ul>
+
+        <h3>2.3 Data Cleaning and Preprocessing</h3>
+        <ul>
+            <li>Handling missing values (<code>NaN</code>): <code>dropna()</code>, <code>fillna()</code>.</li>
+            <li>Dealing with duplicate data.</li>
+            <li>Correcting data types (e.g., converting string dates to datetime objects).</li>
+            <li>Renaming columns.</li>
+            <li>Basic string manipulation for textual data (e.g., medical notes).</li>
+        </ul>
+
+        <h3>2.4 Data Aggregation and Grouping</h3>
+        <ul>
+            <li><code>groupby()</code>: Summarizing data by categories (e.g., average lab values by patient group).</li>
+            <li><code>pivot_table()</code>: Reshaping data for analysis.</li>
+            <li>Merging and concatenating DataFrames (combining patient datasets).</li>
+        </ul>
+
+        <div class="module-header">
+            <h2>Module 3: Data Visualization for Medical Insights</h2>
+        </div>
+
+        <h3>3.1 Introduction to Matplotlib (Basic Plotting)</h3>
+        <ul>
+            <li>Creating line plots (e.g., vital signs over time).</li>
+            <li>Scatter plots (e.g., correlation between two clinical parameters).</li>
+            <li>Histograms (e.g., distribution of patient ages).</li>
+            <li>Bar charts (e.g., prevalence of conditions).</li>
+            <li>Adding titles, labels, legends.</li>
+        </ul>
+
+        <h3>3.2 Introduction to Seaborn (Statistical Data Visualization)</h3>
+        <ul>
+            <li>Enhancing plots with Seaborn's aesthetics.</li>
+            <li>Creating box plots and violin plots (e.g., comparing lab values across treatment groups).</li>
+            <li>Heatmaps (e.g., visualizing correlation matrices of clinical features).</li>
+            <li>Visualizing relationships between multiple variables.</li>
+        </ul>
+
+        <h3>3.3 Case Studies in Medical Data Visualization:</h3>
+        <ul>
+            <li>Visualizing patient demographics from an EHR.</li>
+            <li>Tracking disease prevalence trends.</li>
+            <li>Displaying drug efficacy results.</li>
+            <li>Basic medical image visualization (if time permits, e.g., plotting pixel intensities).</li>
+        </ul>
+
+        <div class="module-header">
+            <h2>Module 4: Introduction to Statistics and Machine Learning in Medicine</h2>
+        </div>
+
+        <h3>4.1 Basic Statistical Concepts with SciPy</h3>
+        <ul>
+            <li>Descriptive statistics (mean, median, mode, variance, standard deviation, quartiles).</li>
+            <li>Introduction to inferential statistics (p-values, confidence intervals - <em>conceptual understanding</em>).</li>
+            <li>Basic hypothesis testing (e.g., t-tests for comparing two groups, ANOVA for multiple groups).</li>
+            <li>Correlation vs. Causation.</li>
+        </ul>
+
+        <h3>4.2 Introduction to Machine Learning (Conceptual)</h3>
+        <ul>
+            <li>What is Machine Learning? Supervised vs. Unsupervised Learning.</li>
+            <li>Common medical applications: diagnosis, prognosis, image analysis, drug discovery.</li>
+            <li>Ethical considerations and biases in AI in healthcare.</li>
+        </ul>
+
+        <h3>4.3 Supervised Learning: Classification and Regression (using Scikit-learn)</h3>
+        <ul>
+            <li><strong>Classification:</strong> Predicting a categorical outcome (e.g., disease presence/absence).
+                <ul>
+                    <li>Example: Logistic Regression for predicting diabetes based on risk factors.</li>
+                    <li>Basic evaluation metrics: Accuracy, Precision, Recall (<em>conceptual</em>).</li>
+                </ul>
+            </li>
+            <li><strong>Regression:</strong> Predicting a continuous outcome (e.g., predicting blood pressure).
+                <ul>
+                    <li>Example: Linear Regression for predicting drug dosage.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>4.4 Practical Machine Learning Workflow</h3>
+        <ul>
+            <li>Data splitting (training and testing sets).</li>
+            <li>Model training and prediction.</li>
+            <li>Interpreting basic model outputs.</li>
+        </ul>
+
+        <div class="module-header">
+            <h2>Module 5: Applications and Future Directions</h2>
+        </div>
+
+        <h3>5.1 Bioinformatics & Genomics (Introduction)</h3>
+        <ul>
+            <li>Basic handling of biological sequences (DNA, RNA, protein - <em>conceptual</em>).</li>
+            <li>Introduction to Biopython (optional, if time permits, for simple sequence analysis).</li>
+            <li>Relevance of Python in personalized medicine.</li>
+        </ul>
+
+        <h3>5.2 Medical Imaging (Basic Concepts)</h3>
+        <ul>
+            <li>Brief overview of medical image formats (DICOM - <em>conceptual</em>).</li>
+            <li>Basic image manipulation (e.g., NumPy for pixel arrays).</li>
+            <li>Discussion of Python libraries like Pillow or OpenCV (<em>conceptual for medical images, more in-depth if students are interested</em>).</li>
+        </ul>
+
+        <h3>5.3 Building Simple Medical Applications (Mini-Projects)</h3>
+        <ul>
+            <li>BMI Calculator: A simple interactive script.</li>
+            <li>Medication Dosage Calculator: Based on patient weight/age.</li>
+            <li>Basic Symptom Checker: Using conditional logic.</li>
+            <li>Simple Patient Data Dashboard: Using Pandas and Matplotlib to summarize and visualize a small dataset.</li>
+        </ul>
+
+        <h3>5.4 Further Learning Resources and Community</h3>
+        <ul>
+            <li>Online courses (Coursera, edX, DataCamp).</li>
+            <li>Python communities (Reddit, Stack Overflow).</li>
+            <li>Relevant medical informatics and data science conferences/journals.</li>
+            <li>How to stay updated with new libraries and techniques.</li>
+        </ul>
+
+        <div class="module-header">
+            <h2>Teaching Methodology:</h2>
+        </div>
+        <ul>
+            <li><strong>Interactive Lectures:</strong> Explain concepts with clear medical analogies.</li>
+            <li><strong>Hands-on Coding Sessions:</strong> Crucial for reinforcement. Use Jupyter Notebooks extensively.</li>
+            <li><strong>Real-World Case Studies:</strong> Use anonymized or simulated medical datasets to make learning relevant.</li>
+            <li><strong>Problem-Based Learning:</strong> Present medical problems and guide students to solve them using Python.</li>
+            <li><strong>Mini-Projects:</strong> Allow students to apply their knowledge to build small, tangible tools.</li>
+        </ul>
+
+        <div class="module-header">
+            <h2>Assessment (Examples):</h2>
+        </div>
+        <ul>
+            <li>Regular coding assignments.</li>
+            <li>Quizzes on concepts and syntax.</li>
+            <li>A final project where students analyze a medical dataset, build a simple model, or create a useful medical script.</li>
+        </ul>
+
+    </div>
+</body>
+</html>
