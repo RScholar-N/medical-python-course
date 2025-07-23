@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python for Medical Students: A Foundational Syllabus</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #0056b3;
+        }
+        h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #007bff;
+            margin-top: 25px;
+        }
+        ul {
+            list-style: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+        ol {
+            list-style: decimal;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .module {
+            background-color: #e9f5ff;
+            border-left: 5px solid #007bff;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .module h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #0056b3;
+        }
+        .module ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .module ul li {
+            margin-bottom: 5px;
+            padding-left: 15px;
+            position: relative;
+        }
+        .module ul li:before {
+            content: "•";
+            color: #007bff;
+            position: absolute;
+            left: 0;
+        }
+        .practical-application {
+            font-style: italic;
+            color: #555;
+            margin-top: 10px;
+            padding-left: 15px;
+            border-left: 2px solid #ccc;
+        }
+        .assessment-methods ul {
+            list-style: none;
+            padding: 0;
+        }
+        .assessment-methods ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .assessment-methods ul li:before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+        .prerequisites ul {
+            list-style: none;
+            padding: 0;
+        }
+        .prerequisites ul li {
+            margin-bottom: 5px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .prerequisites ul li:before {
+            content: "➡️";
+            position: absolute;
+            left: 0;
+        }
+        .resources ul {
+            list-style: none;
+            padding: 0;
+        }
+        .resources ul li {
+            margin-bottom: 5px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .resources ul li:before {
+            content: "📚";
+            position: absolute;
+            left: 0;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Python for Medical Students: A Foundational Syllabus</h1>
+
+        <h2>Course Overview</h2>
+        <p>This course introduces undergraduate medical students to the fundamentals of Python programming with a strong emphasis on its applications in healthcare and biomedical research. Students will learn core programming concepts and gain hands-on experience with Python libraries essential for data analysis, visualization, and an introduction to machine learning in a medical context. The aim is to equip future medical professionals with computational skills to navigate the increasingly data-driven landscape of modern medicine.</p>
+
+        <h2>Course Aim</h2>
+        <p>The primary aim of this course is to empower undergraduate medical students with foundational Python programming skills, enabling them to understand, analyze, and contribute to data-driven initiatives in clinical practice, research, and healthcare management.</p>
+
+        <h2>Learning Objectives</h2>
+        <p>Upon successful completion of this course, students will be able to:</p>
+        <ul>
+            <li>Understand fundamental programming concepts such as variables, data types, control flow, and functions in Python.</li>
+            <li>Utilize Python for basic data manipulation and cleaning using the Pandas and NumPy libraries.</li>
+            <li>Create informative visualizations of medical data using Matplotlib and Seaborn.</li>
+            <li>Comprehend the basic principles of machine learning and its potential applications in disease prediction and diagnosis.</li>
+            <li>Gain an introductory understanding of how Python is used in medical image analysis and natural language processing of clinical text.</li>
+            <li>Apply Python skills to solve simple, real-world problems in healthcare data.</li>
+        </ul>
+
+        <h2>Learning Outcomes</h2>
+        <p>By the end of this course, students will be able to:</p>
+        <ul>
+            <li>Write basic Python scripts to automate simple tasks.</li>
+            <li>Import, clean, and transform tabular medical datasets (e.g., patient demographics, lab results).</li>
+            <li>Generate various plots (e.g., histograms, scatter plots, box plots) to visualize medical data trends.</li>
+            <li>Explain the concepts behind common machine learning algorithms (e.g., classification, regression) and identify their potential use cases in medicine.</li>
+            <li>Discuss the role of Python in advanced medical applications like image analysis and NLP.</li>
+            <li>Collaborate effectively on small data-related projects within a medical team.</li>
+        </ul>
+
+        <h2>Course Modules</h2>
+
+        <div class="module">
+            <h3>Module 1: Introduction to Python Fundamentals (6 hours)</h3>
+            <p><strong>Topics:</strong></p>
+            <ul>
+                <li>What is Python and why is it relevant for medicine?</li>
+                <li>Setting up your Python environment (Jupyter Notebooks/Google Colab).</li>
+                <li>Basic data types: numbers, strings, booleans.</li>
+                <li>Variables and basic operations.</li>
+                <li>Data structures: lists, tuples, dictionaries, sets.</li>
+                <li>Control flow: if/elif/else statements, for loops, while loops.</li>
+                <li>Functions: defining and calling functions, parameters, return values.</li>
+            </ul>
+            <p class="practical-application"><strong>Practical Application:</strong> Simple calculations, managing patient IDs in a list, basic conditional logic for treatment pathways.</p>
+        </div>
+
+        <div class="module">
+            <h3>Module 2: Data Handling with Pandas and NumPy (9 hours)</h3>
+            <p><strong>Topics:</strong></p>
+            <ul>
+                <li>Introduction to NumPy: arrays for numerical operations.</li>
+                <li>Introduction to Pandas: DataFrames and Series.</li>
+                <li>Importing data from CSV/Excel files (simulated medical records).</li>
+                <li>Data inspection: head(), info(), describe().</li>
+                <li>Data cleaning: handling missing values, removing duplicates, correcting data types.</li>
+                <li>Data manipulation: filtering, sorting, grouping, merging datasets.</li>
+            </ul>
+            <p class="practical-application"><strong>Practical Application:</strong> Analyzing simulated patient vital signs, cleaning a dataset of drug dosages, merging patient history with lab results.</p>
+        </div>
+
+        <div class="module">
+            <h3>Module 3: Data Visualization for Medical Insights (9 hours)</h3>
+            <p><strong>Topics:</strong></p>
+            <ul>
+                <li>Introduction to Matplotlib for basic plotting.</li>
+                <li>Creating line plots, scatter plots, bar charts, and histograms.</li>
+                <li>Introduction to Seaborn for statistical data visualization.</li>
+                <li>Generating box plots, violin plots, and heatmaps.</li>
+                <li>Customizing plots: titles, labels, legends, colors.</li>
+            </ul>
+            <p class="practical-application"><strong>Practical Application:</strong> Visualizing disease prevalence over time, comparing blood pressure readings across patient groups, showing distribution of age in a clinical trial.</p>
+        </div>
+
+        <div class="module">
+            <h3>Module 4: Introduction to Machine Learning for Healthcare (12 hours)</h3>
+            <p><strong>Topics:</strong></p>
+            <ul>
+                <li>What is Machine Learning? Supervised vs. Unsupervised Learning.</li>
+                <li>Common ML tasks in medicine: classification (e.g., disease diagnosis) and regression (e.g., predicting recovery time).</li>
+                <li>Basic concepts: features, labels, training, testing, overfitting.</li>
+                <li>Simple classification algorithms (e.g., K-Nearest Neighbors, Logistic Regression - conceptual understanding and using scikit-learn).</li>
+                <li>Evaluating model performance (accuracy, precision, recall - simplified).</li>
+            </ul>
+            <p class="practical-application"><strong>Practical Application:</strong> Building a simple model to predict disease presence based on a small, simulated patient dataset (e.g., predicting diabetes based on glucose levels, BMI).</p>
+        </div>
+
+        <div class="module">
+            <h3>Module 5: Overview of Advanced Medical Applications (6 hours)</h3>
+            <p><strong>Topics:</strong></p>
+            <ul>
+                <li>Medical Image Analysis: Conceptual introduction to image processing (e.g., identifying regions of interest in an X-ray). Discussion of libraries like OpenCV (no deep coding, focus on concepts).</li>
+                <li>Natural Language Processing (NLP) in Clinical Text: Understanding how NLP can extract information from doctor's notes, patient narratives. Basic text processing concepts (e.g., tokenization, stop words).</li>
+                <li>Genomics and Bioinformatics: Brief overview of how Python is used in genetic sequence analysis (e.g., Biopython - conceptual).</li>
+            </ul>
+            <p class="practical-application"><strong>Practical Application:</strong> Discussing real-world examples and case studies from current medical research and practice.</p>
+        </div>
+
+        <div class="module">
+            <h3>Module 6: Project-Based Learning & Ethics (6 hours)</h3>
+            <p><strong>Topics:</strong></p>
+            <ul>
+                <li>Working on a small, guided project applying learned skills to a medical dataset.</li>
+                <li>Data privacy and ethical considerations in healthcare data analysis.</li>
+                <li>Best practices for reproducible research.</li>
+            </ul>
+            <p class="practical-application"><strong>Practical Application:</strong> Students work in small groups on a mini-project (e.g., analyzing a public health dataset, creating a simple patient data summary tool).</p>
+        </div>
+
+        <h2 class="assessment-methods">Assessment Methods</h2>
+        <ul>
+            <li><strong>Quizzes/Assignments (40%):</strong> Regular short quizzes and programming assignments to test understanding of concepts and coding skills.</li>
+            <li><strong>Mid-term Project (30%):</strong> A small-scale project involving data analysis and visualization of a medical dataset.</li>
+            <li><strong>Final Project (30%):</strong> A more comprehensive project where students apply Python to a relevant medical problem, potentially involving simple ML concepts or advanced data manipulation.</li>
+        </ul>
+
+        <h2 class="prerequisites">Prerequisites</h2>
+        <ul>
+            <li>Basic computer literacy.</li>
+            <li>No prior programming experience is required.</li>
+            <li>A strong interest in applying technology to medicine.</li>
+        </ul>
+
+        <h2 class="resources">Recommended Resources</h2>
+        <ul>
+            <li><strong>Online Platforms:</strong>
+                <ul>
+                    <li><a href="https://colab.research.google.com/" target="_blank">Google Colab</a> (for coding environment)</li>
+                    <li><a href="https://www.kaggle.com/" target="_blank">Kaggle</a> (for datasets and notebooks)</li>
+                </ul>
+            </li>
+            <li><strong>Books:</strong>
+                <ul>
+                    <li>"Python for Data Analysis" by Wes McKinney (for Pandas/NumPy).</li>
+                    <li>"Python Crash Course" by Eric Matthes (for general Python basics).</li>
+                </ul>
+            </li>
+            <li><strong>Online Courses/Tutorials:</strong>
+                <ul>
+                    <li>DataCamp, Coursera, edX (look for introductory Python, data science, and machine learning courses).</li>
+                    <li>Specific tutorials on Python for healthcare data.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
